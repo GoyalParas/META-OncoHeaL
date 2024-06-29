@@ -10,3 +10,5 @@ faiss-cpu
 altair
 tiktoken
 huggingface-hub
+langchain_community
+pypdf
