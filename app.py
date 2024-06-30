@@ -44,10 +44,10 @@ def initialize_session_state():
         st.session_state['history'] = []
 
     if 'generated' not in st.session_state:
-        st.session_state['generated'] = ["Hello! Ask me anything about "]
+        st.session_state['generated'] = ["Hi! Always There To Assist You. "]
 
     if 'past' not in st.session_state:
-        st.session_state['past'] = ["Hey!"]
+        st.session_state['past'] = ["Hey! I Need Some Counselling."]
 
 def display_chat_history():
     reply_container = st.container()
@@ -55,7 +55,7 @@ def display_chat_history():
 
     with container:
         with st.form(key='my_form', clear_on_submit=True):
-            user_input = st.text_input("Question:", placeholder="Know Your Mental Health", key='input')
+            user_input = st.text_input("Question:", placeholder="“Cancer is just a chapter in our lives and not the whole story.”", key='input')
             submit_button = st.form_submit_button(label='Send')
 
         if submit_button and user_input:
