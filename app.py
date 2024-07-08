@@ -44,10 +44,10 @@ def initialize_session_state():
         st.session_state['history'] = []
 
     if 'generated' not in st.session_state:
-        st.session_state['generated'] = ["Hi! Always There To Assist You. "]
+        st.session_state['generated'] = ["Hi! Always There To Assist You🤗 "]
 
     if 'past' not in st.session_state:
-        st.session_state['past'] = ["Hey! I Need Some Counselling."]
+        st.session_state['past'] = ["Hey! I Need Some Counselling👋🏻"]
 
 def display_chat_history():
     reply_container = st.container()
